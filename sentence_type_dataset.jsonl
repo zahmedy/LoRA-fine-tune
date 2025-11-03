@@ -1,0 +1,22 @@
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "The sun is shining.", "output": "Declarative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Mondays are long.", "output": "Declarative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Bitcoin is the future of money.", "output": "Declarative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Islam is the truth.", "output": "Declarative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Japan is clean.", "output": "Declarative"}
+
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Shut the door!", "output": "Imperative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Please give me water.", "output": "Imperative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Go to bed, now!", "output": "Imperative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Give 5 more minutes.", "output": "Imperative"}
+
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "How are you today?", "output": "Interrogative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Why is the pressure reading so high?", "output": "Interrogative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Did you finish the report?", "output": "Interrogative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Where did you put my notebook?", "output": "Interrogative"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "Can we start the meeting now?", "output": "Interrogative"}
+
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "What a wonderful surprise!", "output": "Exclamatory"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "That movie was amazing!", "output": "Exclamatory"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "I can’t believe how fast you ran!", "output": "Exclamatory"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "What a terrible mistake!", "output": "Exclamatory"}
+{"instruction": "Classify this sentence as Declarative, Imperative, Interrogative, or Exclamatory.", "input": "That’s unbelievable!", "output": "Exclamatory"}
