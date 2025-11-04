@@ -1,23 +1,14 @@
-from datasets import load_dataset
-import train
-import inference
-
-ds = load_dataset("json", data_files="sentence_type_dataset.jsonl", split="train")
-ds = ds.train_test_split(test_size=0.2, seed=42)
-
+# main.py
+from train import train_and_save
+from inference import run_inference
 
 def main():
-    # Train 
+    adapter_dir = train_and_save(adapter_dir="out-lora-mac/adapter")
+    print("Saved adapter to:", adapter_dir)
 
-    train.trainer.train()
-    train.model.save_pretrained("out-lora-mac/adapter")
-    train.tok.save_pretrained("out-lora-mac/adapter")
-
-    # Inference 
-
-    inputs = inference.tok(inference.prompt, return_tensors="pt").to("mps")
-    out = inference.base.generate(**inputs, max_new_tokens=3)
-    print(inference.tok.decode(out[0], skip_special_tokens=True))
+    # simple test
+    pred = run_inference(adapter_dir, 'Please open the east valve.')
+    print("Prediction:", pred)
 
 if __name__ == "__main__":
     main()
