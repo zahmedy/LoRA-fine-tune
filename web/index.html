@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Sentence Type Classifier</title>
+  <style>
+    body { font: 16px/1.4 system-ui, -apple-system, sans-serif; padding: 32px; max-width: 720px; margin: auto; }
+    input, button { font: inherit; padding: 10px 12px; }
+    #result { margin-top: 16px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>Sentence Type Classifier</h1>
+  <p>Enter a sentence. The API returns one word: Declarative / Imperative / Interrogative / Exclamatory.</p>
+  <input id="text" size="60" placeholder="e.g., Please open the east valve." />
+  <button id="go">Classify</button>
+  <div id="result"></div>
+
+  <script>
+    const API = "http://127.0.0.1:8000/predict";
+    document.getElementById("go").onclick = async () => {
+      const sentence = document.getElementById("text").value.trim();
+      if (!sentence) return;
+      const res = await fetch(API, {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({ sentence })
+      });
+      const data = await res.json();
+      document.getElementById("result").textContent = "Prediction: " + data.label;
+    };
+  </script>
+</body>
+</html>
