@@ -10,12 +10,12 @@
   "is_world_process_zero": true,
   "log_history": [
     {
-      "entropy": 0.9989256388262698,
+      "entropy": 1.0000770829225842,
       "epoch": 2.533333333333333,
-      "grad_norm": 0.816106379032135,
+      "grad_norm": 0.8077812790870667,
       "learning_rate": 6.666666666666667e-05,
-      "loss": 1.4577,
-      "mean_token_accuracy": 0.7075244251050448,
+      "loss": 1.4616,
+      "mean_token_accuracy": 0.7053280127675909,
       "num_tokens": 1847.0,
       "step": 5
     }

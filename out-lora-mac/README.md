@@ -4,8 +4,8 @@ library_name: transformers
 model_name: out-lora-mac
 tags:
 - generated_from_trainer
-- sft
 - trl
+- sft
 licence: license
 ---
 
